@@ -23,6 +23,7 @@
 .navbar__item {
     display: inline-flex;
     margin: 0 8px;
+    position: relative;
 }
 
 .navbar__item-text,
@@ -39,6 +40,63 @@
 .navbar__icon {
     margin: 0 4px;
 }
+
+/* dowload */
+.download {
+    position: absolute;
+    top: 150%;
+    width: 160px;
+    background-color: var(--white-color);
+    animation: showElement ease 0.25s;
+    transform-origin: top;
+    display: none;
+}
+
+.download::before {
+    position: absolute;
+    content: "";
+    display: block;
+    height: 20px;
+    width: 160px;
+    top: -10px;
+}
+
+@keyframes showElement {
+    from {
+        opacity: 0;
+        transform: scale(0);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.show-qrcode:hover .download{
+    display: block;
+}
+
+.qr-code {
+    width: 100%;
+}
+
+.download__app {
+    display: flex;
+}
+
+.download__app-item {
+    height: 16px;
+    margin-bottom: 8px;
+}
+
+img[alt="Google Play"] {
+    margin-left: 8px;
+}
+
+img[alt="App Store"] {
+    margin-right: 8px;
+}
+
 
 
 /* container */
