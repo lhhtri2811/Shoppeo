@@ -149,7 +149,7 @@ img[alt="App Store"] {
 
 .notify__item {
     background-color: rgba(245, 62, 45, 0.15);
-    padding-left: 8px;
+    padding: 8px 0 8px 8px;
 }
 
 .notify__item:hover {
@@ -203,6 +203,117 @@ img[alt="App Store"] {
     font-size: 1.2rem;
     display: inline-block;
     padding: 0 28px;
+}
+
+/* modal auth */
+.auth-form {
+    width: 500px;
+    border-radius: 4px;
+    background-color: var(--white-color);
+    overflow: hidden;
+}
+
+.auth-form__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+.auth-form__body {
+    padding: 20px;
+}
+
+.auth-form__heading {
+    font-size: 1.7rem;
+}
+
+.auth-form__switch-btn {
+    color: var(--primary-color);
+    font-size: 1.7rem;
+    text-decoration: none;
+}
+
+.auth-form__form {
+    margin-top: 24px;
+}
+
+.auth-form__group {
+
+}
+
+.auth-form__input {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.2rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+}
+
+.auth-form__input:focus {
+    border-color: #888;
+}
+
+.auth-form__input + .auth-form__input {
+    margin-top: 8px;
+}
+
+.auth-form__policy {
+    margin-top: 8px;
+    font-size: 1.3rem;
+    line-height: 1.4;
+}
+
+.auth-form__policy-text {
+    text-align: center;
+}
+
+.auth-form__policy-link {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.auth-form__control {
+    margin-top: 64px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn-back {
+    color: var(--black-color);
+    margin-right: 16px;
+}
+
+.btn-back:hover {
+    background-color: #dddddd;
+}
+
+.social-connect {
+    background-color: #E3E2E3;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 32px;
+    display: flex;
+    align-items: center;
+}
+
+.btn-social {
+    min-width: 190px;
+}
+
+.btn-social i {
+    margin-right: 4px;
+}
+
+.btn-facebook {
+    background-color: #1877F2;
+}
+
+.btn-google {
+    background-color: #D9534F;
 }
 
 
