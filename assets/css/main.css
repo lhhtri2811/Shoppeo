@@ -259,17 +259,17 @@ img[alt="App Store"] {
     margin-top: 8px;
 }
 
-.auth-form__policy {
+.auth-form__text {
     margin-top: 8px;
     font-size: 1.3rem;
     line-height: 1.4;
 }
 
-.auth-form__policy-text {
+.auth-form__policy {
     text-align: center;
 }
 
-.auth-form__policy-link {
+.auth-form__link {
     text-decoration: none;
     color: var(--primary-color);
 }
@@ -314,6 +314,11 @@ img[alt="App Store"] {
 
 .btn-google {
     background-color: #D9534F;
+}
+
+.auth-form__help {
+    display: flex;
+    justify-content: space-between;
 }
 
 
