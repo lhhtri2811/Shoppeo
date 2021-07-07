@@ -63,17 +63,6 @@
     top: -10px;
 }
 
-@keyframes showElement {
-    from {
-        opacity: 0;
-        transform: scale(0);
-    }
-    to {
-        opacity: 1;
-        transform: scale(1);
-    }
-}
-
 .showElement:hover .download{
     display: block;
 }
