@@ -4,7 +4,7 @@
 
 /* header */
 #header {
-    height: 100px;
+    height: 120px;
     background-image: linear-gradient(0, #fe6433, #f53e2d);
 }
 
@@ -22,8 +22,11 @@
 
 .navbar__item {
     display: inline-flex;
-    margin: 0 8px;
     position: relative;
+}
+
+.navbar__item + .navbar__item {
+    margin-left: 16px;
 }
 
 .navbar__item-text,
@@ -310,7 +313,149 @@ img[alt="App Store"] {
     justify-content: space-between;
 }
 
+/* header with search */
+.header-with-search {
+    height: var(--header-with-search-height);
+    display: flex;
+    align-items: center;
+}
 
+.header-logo {
+    width: 200px;
+}
+
+.header-logo__img {
+    width: 150px;
+}
+
+.header-searchbar {
+    flex: 1;
+    background-color: var(--white-color);
+    height: 40px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+}
+
+.header-searchbar__input {
+    flex: 1;
+    height: 100%;
+    border: none;
+    outline: none;
+    padding: 0 16px;
+    font-size: 1.6rem;
+}
+
+.header-searchbar__selection {
+    border-left: 1px solid #ccc;
+    padding: 0 8px;
+    font-size: 1.4rem;
+    cursor: pointer;
+    position: relative;
+}
+
+.header-searchbar__selection-label {
+    line-height: 40px;
+}
+
+.header-searchbar__selection-icon {
+    color: #999;
+    margin: 0 4px;
+}
+
+.header-searchbar__option {
+    position: absolute;
+    background-color: var(--white-color);
+    padding-left: 0;
+    width: 110px;
+    right: 0;
+    top: 80%;
+    border-radius: 4px;
+    display: none;
+    animation: showElement ease 0.25s;
+    transform-origin: top;
+}
+
+.header-searchbar__option::before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 110px;
+    height: 20px;
+    top: -20px;
+}
+
+.header-searchbar__selection:hover .header-searchbar__option {
+    display: block;
+}
+
+.header-searchbar__option-item {
+    list-style: none;
+    padding: 8px;
+}
+
+.header-searchbar__option-item:hover {
+    background-color: #eee;
+    
+}
+
+.header-searchbar__option-item:first-child {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.header-searchbar__option-item:last-child {
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.header-searchbar__option-item span {
+
+}
+
+.header-searchbar__option-item i {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    margin-left: 4px;
+    display: none;
+}
+
+.header-searchbar__option-item--active i {
+    display: inline-block;
+}
+
+
+.header-searchbar__btn {
+    border: none;
+    background-color: var(--primary-color);
+    height: 34px;
+    width: 50px;
+    margin: 3px;
+    display: flex;
+    cursor: pointer;
+}
+
+.header-searchbar__btn:hover {
+    opacity: 0.8;
+}
+
+.header-searchbar__btn-icon {
+    color: var(--white-color);
+    font-size: 1.4rem;
+    margin: auto;
+}
+
+.header-cart {
+    width: 136px;
+    text-align: center;
+}
+
+.header-cart__icon {
+    color: var(--white-color);
+    font-size: 2.6rem;
+    cursor: pointer;
+    padding: 14px;
+}
 
 
 /* container */

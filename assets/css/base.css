@@ -3,6 +3,9 @@
     --white-color : #fff;
     --black-color: #000;
     --text-color: #ccc;
+    --header-height: 120px;
+    --navbar--height: 34px;
+    --header-with-search-height: calc(var(--header-height) - var(--navbar--height));
 }
 
 * {
