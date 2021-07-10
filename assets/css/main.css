@@ -347,7 +347,7 @@ img[alt="App Store"] {
 }
 
 .header-searchbar__selection {
-    border-left: 1px solid #ccc;
+    border-left: 1px solid #dddddd;
     padding: 0 8px;
     font-size: 1.4rem;
     cursor: pointer;
