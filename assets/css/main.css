@@ -104,6 +104,7 @@ img[alt="App Store"] {
     will-change: opacity, transform;
     animation: showElement ease 0.25s;
     display: none;
+    z-index: 10;
 }
 
 .showElement:hover .notify {
