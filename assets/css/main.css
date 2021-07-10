@@ -337,13 +337,23 @@ img[alt="App Store"] {
     align-items: center;
 }
 
-.header-searchbar__input {
+.header-searchbar-wrap {
     flex: 1;
     height: 100%;
+    position: relative;
+}
+
+.header-searchbar__input {
+    height: 100%;
+    width: 100%;
     border: none;
     outline: none;
     padding: 0 16px;
     font-size: 1.6rem;
+}
+
+.header-searchbar__input:focus ~ .searchbar__history {
+    display: block;
 }
 
 .header-searchbar__selection {
@@ -445,6 +455,49 @@ img[alt="App Store"] {
     margin: auto;
 }
 
+/* search history */
+.searchbar__history {
+    position: absolute;
+    background-color: var(--white-color);
+    top: 110%;
+    width: 100%;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 0 4px #888;
+    display: none;
+}
+
+.searchbar__history-heading {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #ccc;
+    margin: 8px 16px;
+}
+
+.searchbar__history-list {
+    padding-left: 0;
+    margin: 0;
+}
+
+.searchbar__history-item {
+    list-style: none;
+    padding: 0 16px;
+    font-size: 1.4rem;
+    height: 36px;
+}
+
+.searchbar__history-item:hover {
+    background-color: #eee;
+}
+
+.searchbar__history-item a {
+    text-decoration: none;
+    color: #bbb;
+    display: block;
+    line-height: 36px;
+}
+
+
 .header-cart {
     width: 136px;
     text-align: center;
@@ -461,7 +514,7 @@ img[alt="App Store"] {
 /* container */
 #container {
     height: 1200px;
-    background-color: #333;
+    background-color: #ccc;
 }
 
 /* footer */
