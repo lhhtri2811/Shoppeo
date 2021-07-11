@@ -510,8 +510,22 @@ img[alt="App Store"] {
     display: inline-block;
 }
 
-.header-cart-wrap:hover .header-cart-list {
+.header-cart-wrap:hover .header-cart__list {
     display: block;
+}
+
+.header-cart__products-quantity {
+    position: absolute;
+    background-color: var(--white-color);
+    font-size: 1.4rem;
+    padding: 2px 6px;
+    line-height: 1.4rem;
+    color: var(--primary-color);
+    font-weight: 600;
+    border-radius: 50%;
+    border: 2px solid #ee402d;
+    top: 4px;
+    right: 2px;
 }
 
 .header-cart__icon {
@@ -521,7 +535,7 @@ img[alt="App Store"] {
     padding: 14px;
 }
 
-.header-cart-list {
+.header-cart__list {
     position: absolute;
     background-color: var(--white-color);
     top: calc(100% - 3px);
@@ -535,7 +549,7 @@ img[alt="App Store"] {
     cursor: default;
 }
 
-.header-cart-list::before {
+.header-cart__list::before {
     position: absolute;
     content: "";
     display: block;
@@ -546,8 +560,8 @@ img[alt="App Store"] {
     cursor: pointer;
 }
 
-.header-cart-list-empty .header-cart__img,
-.header-cart-list-empty .header-cart__msg {
+.header-cart__list--empty .header-cart__img,
+.header-cart__list--empty .header-cart__msg {
     display: block;
     margin-left: auto;
     margin-right: auto;
