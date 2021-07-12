@@ -510,7 +510,7 @@ img[alt="App Store"] {
     display: inline-block;
 }
 
-.header-cart-wrap:hover .header-cart__list {
+.header-cart-wrap:hover .cart__detail {
     display: block;
 }
 
@@ -535,7 +535,7 @@ img[alt="App Store"] {
     padding: 14px;
 }
 
-.header-cart__list {
+.cart__detail {
     position: absolute;
     background-color: var(--white-color);
     top: calc(100% - 3px);
@@ -547,9 +547,10 @@ img[alt="App Store"] {
     animation: showElement ease 0.25s;
     transform-origin: calc(100% - 26px) top;
     cursor: default;
+    text-align: start;
 }
 
-.header-cart__list::before {
+.cart__detail::before {
     position: absolute;
     content: "";
     display: block;
@@ -560,27 +561,120 @@ img[alt="App Store"] {
     cursor: pointer;
 }
 
-.header-cart__list--empty .header-cart__img,
-.header-cart__list--empty .header-cart__msg {
+.cart__detail .cart__detail-heading,
+.cart__detail .products__list,
+.cart__detail .cart__detail-footer {
+    display: block;
+}
+
+.cart__detail--empty .cart__detail--empty-img,
+.cart__detail--empty .cart__detail--empty-msg {
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
-.header-cart__img {
+.cart__detail--empty .cart__detail-heading,
+.cart__detail--empty .products__list,
+.cart__detail--empty .cart__detail-footer {
+    display: none;
+}
+
+.cart__detail--empty-img {
     width: 60%;
     padding: 16px 0;
     display: none;
 }
 
-.header-cart__msg {
+.cart__detail--empty-msg {
     display: none;
     font-size: 1.4rem;
     color: #666;
     margin-bottom: 8px;
+    text-align: center;
 }
 
+.cart__detail-heading {
+    margin: 8px 0 8px 8px;
+    font-size: 1.4rem;
+    color: #ccc;
+    font-weight: 400;
+    display: none;
+}
 
+.products__list {
+    padding-left: 0;
+    display: none;
+}
+
+.products__item {
+    display: flex;
+    margin-left: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.products__item:hover {
+    background-color: #f0f0f0;
+}
+
+.product__img {
+    height: 60px;
+    object-fit: contain;
+    border: 1px solid #e8e8e8;
+
+}
+
+.product__info {
+    margin: 0 8px;
+    flex: 1;
+}
+
+.product__heading {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.4rem;
+    line-height: 1.6;
+    
+}
+
+.product__name {
+    font-weight: 650;
+}
+
+.product__price {
+    color: var(--primary-color);
+}
+
+.product__multiply,
+.product__desc,
+.product__quantity {
+    color: #ccc;
+}
+
+.product__body {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.4rem;
+    line-height: 1.6;
+}
+
+.product__remove {
+    cursor: pointer;
+}
+
+.cart__detail-footer {
+    display: none;
+}
+
+.see-cart {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.cart__detail-footer a {
+    margin: 8px 8px 8px 0;
+}
 
 /* container */
 #container {
