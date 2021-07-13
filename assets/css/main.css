@@ -209,7 +209,7 @@ img[alt="App Store"] {
 }
 
 .navbar__user-name {
-    margin-left: 4px;
+    margin-left: 6px;
 }
 
 .user__info {
@@ -471,11 +471,12 @@ img[alt="App Store"] {
     padding-left: 0;
     width: 110px;
     right: 0;
-    top: 80%;
+    top: calc(100% - 10px);
     border-radius: 4px;
     display: none;
     animation: showElement ease 0.25s;
     transform-origin: top;
+    box-shadow: 0 0 4px #888;
 }
 
 .header-searchbar__option::before {
@@ -552,7 +553,7 @@ img[alt="App Store"] {
     position: absolute;
     background-color: var(--white-color);
     top: calc(100% + 4px);
-    width: 100%;
+    width: 95%;
     border-radius: 4px;
     overflow: hidden;
     box-shadow: 0 0 4px #888;
