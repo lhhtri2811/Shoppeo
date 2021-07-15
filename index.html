@@ -271,7 +271,7 @@
         <!-- container -->
         <div id="container">
             <div class="grid">
-                <div class="grid__row">
+                <div class="grid__row container__content">
                     <div class="grid__column grid__column-2">
                         <nav class="category">
                             <h3 class="category__heading">
@@ -292,7 +292,42 @@
                         </nav>
                     </div>
                     <div class="grid__column grid__column-10">
-
+                        <div class="sort-bar">
+                            <span class="sort-bar__label">Sắp xếp theo</span>
+                            <div class="sort-by-options">
+                                <button class="btn sort-btn">Phổ biến</button>
+                                <button class="btn sort-btn btn-primary">Mới nhất</button>
+                                <button class="btn sort-btn">Bán chạy</button>
+                                <div class="sort-with-status">
+                                    <!--  sort-by-options--active -->
+                                    <span class="sort__label">Giá</span>
+                                    <i class="sort-icon fas fa-caret-down"></i>
+                                    <ul class="sort-by-options-list">
+                                        <li class="sort-option">
+                                            Giá: Thấp đến Cao
+                                        </li>
+                                        <li class="sort-option">
+                                            Giá: Cao đến Thấp
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="page-controller">
+                                <span class="page-controller__state">
+                                    <span class="page-controller__current">1</span>
+                                    /
+                                    <span class="page-controller__total">2</span>
+                                </span>
+                                <div class="page-controller__direction">
+                                    <a href="#" class="page-controller-btn page-controller-btn--previous page-controller-btn--disable">
+                                        <i class="fas fa-angle-left"></i>
+                                    </a>
+                                    <a href="#" class="page-controller-btn page-controller-btn--next">
+                                        <i class="fas fa-angle-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

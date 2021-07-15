@@ -72,6 +72,7 @@ html {
     left: 0;
     display: flex;
     animation: showElement ease 0.3s;
+    z-index: 1;
 }
 
 .modal__overlay {
@@ -100,12 +101,15 @@ html {
     border: none;
     font-size: 1.4rem;
     line-height: 1.8;
-    color: var(--white-color);
+    color: var(--black-color);
     border-radius: 4px;
     min-width: 140px;
     text-align: center;
     padding: 0;
     cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .btn:hover {
