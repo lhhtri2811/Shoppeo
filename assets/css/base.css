@@ -32,6 +32,21 @@ html {
 .grid__row {
     display: flex;
     flex-wrap: wrap;
+    margin-left: -12px;
+    margin-right: -12px;
+}
+
+.grid__column {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.grid__column-2 {
+    width: 16.666667%;
+}
+
+.grid__column-10 {
+    width: 83.333333%;
 }
 
 .text-bold {
