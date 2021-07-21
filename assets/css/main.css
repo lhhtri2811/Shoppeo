@@ -775,7 +775,7 @@ img[alt="App Store"] {
 
 /* container */
 #container {
-    height: 1200px;
+    /* height: 1200px; */
     background-color: #f5f5f5;
     /* background-color: #333; */
     margin-top: var(--header-height);
@@ -788,8 +788,9 @@ img[alt="App Store"] {
 .category {
     border-radius: 4px;
     background-color: var(--white-color);
-    position: fixed;
-    min-width: 180px;
+    /* position: fixed; */
+    /* min-width: 180px; */
+    min-width: 100%;
     box-shadow: 0 0 4px #666;
 }
 
@@ -856,6 +857,7 @@ img[alt="App Store"] {
     align-items: center;
     padding: 12px 20px;
     border-radius: 4px;
+    /* position: fixed; */
 }
 
 .sort-bar__label {
@@ -996,6 +998,199 @@ img[alt="App Store"] {
 .page-controller-btn--next {
     border-top-right-radius: 4px;
     border-bottom-right-radius: 4px;
+}
+
+/* home product item */
+.home-product {
+    margin-bottom: 10px;
+}
+
+.home-product__item {
+    margin-top: 10px;
+    box-shadow: 0 0 2px 0 #666;
+    position: relative;
+    transition: transform ease 0.1s;
+    will-change: transform;
+}
+
+.home-product__item:hover {
+    box-shadow: 0 0 2px 0 #999;
+    transform: translateY(-1px);
+}
+
+.home-product__link {
+    text-decoration: none;
+}
+
+.home-product__img {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-top: 100%;
+    border-bottom: 1px solid #ccc;
+}
+
+.product-detail {
+    padding: 10px;
+    
+}
+
+.product-detail__name {
+    margin: 0;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    color: #333;
+    /* giới hạn hiển thị text */
+    height: 3.6rem;
+    overflow: hidden;
+    display: block;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+.product-detail__price {
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-size: 1.2rem;
+}
+
+.product-detail__price-old {
+    text-decoration: line-through;
+    color: #333;
+}
+
+.product-detail__price-sale {
+    color: var(--primary-color);
+    font-size: 1.6rem;
+}
+
+.product-detail__action {
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.action__like {
+    text-decoration: none;
+    margin-right: auto;
+}
+
+.action__like.action__like--liked .action__like-icon {
+    display: none;
+}
+
+.action__like.action__like--liked .action__liked-icon {
+    display: block;
+    color: var(--primary-color);
+}
+
+.action__like .action__liked-icon {
+    display: none;
+}
+
+.action__rate {
+    color: #ccc;
+    transform: scale(0.7);
+    transform-origin: right;
+}
+
+.action__rated {
+    color: var(--primary-color);
+}
+
+.quantity-sold {
+    margin-left: 6px;
+    color: #333;
+}
+
+.brand-info {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.brand-info__name {
+
+}
+
+.brand-info__location {
+    color: #595959;
+    font-weight: 200;
+}
+
+.favourite {
+    position: absolute;
+    top: 10px;
+    left: -4px;
+    color: var(--primary-color);
+    background-color: currentColor;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    padding-right: 4px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    cursor: pointer;
+}
+
+.favourite::after {
+    position: absolute;
+    content: "";
+    display: block;
+    border-top: 3px solid currentColor;
+    border-left: 3px solid transparent;
+    filter: brightness(70%);
+}
+
+.favourite  i {
+    color: var(--white-color);
+    font-size: 0.9rem;
+    margin: 0 3px 0 4px;
+}
+
+.favourite span {
+    color: var(--white-color);
+}
+
+.sale-off {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 40px;
+    min-height: 36px;
+    background-color: rgba(255, 210, 56, 0.93);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    cursor: pointer;
+}
+
+.sale-off::after {
+    position: absolute;
+    content: "";
+    display: block;
+    /* clip-path: polygon(50% 0, 100% 18%, 100% 0, 0 0, 0 18%); */
+    clip-path: polygon(0 0, 100% 0, 100% 20%, 50% 0, 0 20%);
+    background-color: rgba(255, 210, 56, 0.93);
+    width: 100%;
+    height: 100%;
+    top: 100%;
+}
+
+.sale-off__percent {
+    color: var(--primary-color);
+    font-size: 1.3rem;
+}
+
+.sale-off__label {
+    color: var(--white-color);
+    font-size: 1.2rem;
 }
 
 
