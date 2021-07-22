@@ -61,6 +61,7 @@
     will-change: opacity, transform;
     animation: showElement ease 0.25s;
     transform-origin: top;
+    box-shadow: 0 0 6px #666;
     display: none;
 }
 
@@ -702,6 +703,8 @@ img[alt="App Store"] {
 .products__list {
     padding-left: 0;
     display: none;
+    height: 50vh;
+    overflow-y: auto;
 }
 
 .products__item {
@@ -731,12 +734,17 @@ img[alt="App Store"] {
     display: flex;
     justify-content: space-between;
     font-size: 1.4rem;
-    line-height: 1.6;
-    
+    line-height: 2rem;
+    max-height: 4rem;
+    overflow: hidden;
 }
 
 .product__name {
     font-weight: 650;
+    flex: 1;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
 }
 
 .product__price {
@@ -922,6 +930,7 @@ img[alt="App Store"] {
     box-shadow: 0 0 4px #666;
     animation: showElement ease 0.25s;
     transform-origin: top;
+    z-index: 1;
 }
 
 .sort-by-options-list::before {
@@ -1192,6 +1201,7 @@ img[alt="App Store"] {
     color: var(--white-color);
     font-size: 1.2rem;
 }
+
 
 
 /* footer */
