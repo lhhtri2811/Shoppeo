@@ -1202,7 +1202,10 @@ img[alt="App Store"] {
     font-size: 1.2rem;
 }
 
-
+.home-product__pagination {
+    margin-top: 48px;
+    margin-bottom: 32px;
+}
 
 /* footer */
 #footer {
