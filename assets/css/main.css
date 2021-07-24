@@ -1209,5 +1209,202 @@ img[alt="App Store"] {
 
 /* footer */
 #footer {
-
+    border-top: 6px solid var(--primary-color);
 }
+
+.footer-section {
+    margin-top: 64px;
+}
+
+.footer-heading {
+    font-size: 1.4rem;
+    color: #999;
+    margin: 0;
+}
+
+.footer-list {
+    padding-left: 0;
+    margin-top: 20px;
+}
+
+.footer-list-item {
+    list-style: none;
+}
+
+.footer-list-item__link {
+    display: block;
+    text-decoration: none;
+    color: #999;
+    padding: 8px 0;
+    font-size: 1.2rem;
+}
+
+.footer-list-item__link:hover {
+    color: var(--primary-color);
+}
+
+.payment-delivery {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-left: 0;
+    width: 190px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.payment-delivery-item {
+    list-style: none;
+    height: 29px;
+    width: 55px;
+    margin-bottom: 10px;
+    margin-right: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.footer-backgound {
+    background-image: url('../image/footer-icons.png');
+}
+
+.payment-visa-img {
+    background-size: 1390.909090909091% 1194.4444444444443%;
+    background-position: 73.52112676056338% 5.0761421319796955%;
+}
+
+.payment-mastercard-img {
+    background-size: 1390.909090909091% 741.3793103448276%;
+    background-position: 44.50704225352113% 5.376344086021505%;
+}
+
+.payment-jcb-img {
+    background-size: 1390.909090909091% 934.7826086956521%;
+    background-position: 37.183098591549296% 30.729166666666668%;
+}
+
+.payment-amex-img {
+    background-size: 1530% 977.2727272727273%;
+    background-position: 11.188811188811188% 5.181347150259067%;
+}
+
+.payment-cod-img {
+    background-size: 1530% 741.3793103448276%;
+    background-position: 79.3006993006993% 25.806451612903224%;
+}
+
+.payment-installment-img {
+    background-size: 1390.909090909091% 741.3793103448276%;
+    background-position: 79.85915492957747% 52.1505376344086%;
+}
+
+.payment-shopeepay-img {
+    background-size: 765% 1131.578947368421%;
+    background-position: 63.00751879699248% 24.489795918367346%;
+}
+
+.delivery-shopee_express-img {
+    background-size: 689.1891891891892% 1194.4444444444443%;
+    background-position: 59.78593272171254% 5.0761421319796955%;
+}
+
+.delivery-ghtk-img {
+    background-size: 1390.909090909091% 1194.4444444444443%;
+    background-position: 19.295774647887324% 51.776649746192895%;
+}
+
+.delivery-ghn-img {
+    background-size: 1390.909090909091% 741.3793103448276%;
+    background-position: 8.732394366197184% 54.83870967741935%;
+}
+
+.delivery-viettel_post-img {
+    background-size: 597.65625% 167.96875%;
+    background-position: 65.77708006279435% 100%;
+}
+
+.delivery-vnpost-img {
+    background-size: 1390.909090909091% 796.2962962962963%;
+    background-position: 100% 5.319148936170213%;
+}
+
+.delivery-jnt-img {
+    background-size: 1390.909090909091% 1343.75%;
+    background-position: 84.08450704225352% 5.025125628140704%;
+}
+
+.delivery-grab_express-img {
+    background-size: 570.8955223880597% 741.3793103448276%;
+    background-position: 25.673534072900157% 5.376344086021505%;
+}
+
+.delivery-now-img {
+    background-size: 956.25% 268.75%;
+    background-position: 46.13138686131387% 77.77777777777777%;
+}
+
+.delivery-ninja_van-img {
+    background-size: 1275% 826.9230769230769%;
+    background-position: 48.08510638297872% 31.21693121693122%;
+}
+
+.delivery-best-img {
+    background-size: 1062.5% 716.6666666666666%;
+    background-position: 10.1010101010101% 28.10810810810811%;
+}
+
+.contact-link {
+    display: flex;
+    align-items: center;
+}
+
+.footer-social-icon {
+    height: 16px;
+    width: 16px;
+    display: inline-block;
+    margin-right: 8px;
+}
+
+.footer-facebook-icon {
+    background-size: 2390.625% 671.875%;
+    background-position: 1.364256480218281% 44.80874316939891%;
+}
+
+.footer-instagram-icon {
+    background-size: 2390.625% 671.875%;
+    background-position: 28.922237380627557% 32.240437158469945%;
+}
+
+.footer-linkedin-icon {
+    background-size: 2390.625% 671.875%;
+    background-position: 36.01637107776262% 55.73770491803279%;
+}
+
+.footer-download {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-qr-code {
+    width: 70%;
+    border: 1px solid #ccc;
+}
+
+.footer-download__app {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.download-link {
+    display: block;
+    text-align: center;
+}
+
+.download-link img[alt="Google Play"],
+.download-link img[alt="App Store"] {
+    width: 70%;
+    /* border: 1px solid #ccc; */
+    margin: 4px 0 0;
+}
+
