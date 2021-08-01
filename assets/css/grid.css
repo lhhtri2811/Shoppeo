@@ -280,9 +280,19 @@
         margin-right: -12px;
     }
 
+    .row.small-gutter {
+        margin-left: -5px;
+        margin-right: -5px;
+    }
+
     .col {
         padding-left: 12px;
         padding-right: 12px;
+    }
+
+    .row.small-gutter .col {
+        padding-left: 5px;
+        padding-right: 5px;
     }
 
     .col-lg-0 {
@@ -425,6 +435,16 @@
     .wide .row {
         margin-left: -12px;
         margin-right: -12px;
+    }
+
+    .wide .row.small-gutter {
+        margin-left: -5px;
+        margin-right: -5px;
+    }
+
+    .wide .row.small-gutter .col {
+        padding-left: 5px;
+        padding-right: 5px;
     }
 
     .wide .col {
