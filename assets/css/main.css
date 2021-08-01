@@ -13,6 +13,57 @@
     z-index: 1;
 }
 
+/* header sort bar */
+.header__sort-bar {
+    position: fixed;
+    left: 0;
+    right: 0;
+    height: var(--header-sort-height);
+    padding-left: 0;
+    margin: 0;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    background-color: var(--white-color);
+    display: none;
+}
+
+.header__sort-item {
+    list-style: none;
+    display: block;
+    flex-grow: 1;
+    text-align: center;
+    position: relative;
+}
+
+.header__sort-item::before {
+    position: absolute;
+    content: "";
+    display: block;
+    height: 60%;
+    border-left: 1px solid #e5e5e5;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.header__sort-item:first-child .header__sort-item::before {
+    display: none;
+}
+
+.header__sort-item--active .header__sort-link {
+    color: var(--primary-color);
+}
+
+.header__sort-link {
+    text-decoration: none;
+    color: #333;
+    line-height: var(--header-sort-height);
+    font-size: 1.4rem;
+}
+
+.header__sort-icon {
+    color: #333;
+}
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -293,6 +344,131 @@ img[alt="App Store"] {
     padding: 8px 12px;
 }
 
+    /* mobile menu bar */
+    .mobile__menu-bar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        z-index: 3;
+        width: 70%;
+        max-width: 400px;
+        background-color: var(--white-color);
+        padding: 100px 32px 48px 0;
+        display: none;
+        animation: menuSlideIn linear 0.3s;
+    }
+
+    @keyframes menuSlideIn {
+        from {
+            opacity: 0;
+            transform: translateX(-100%);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0%);
+        }
+    }
+
+    /* .mobile__menu-bar::before {
+        position: absolute;
+        content: "";
+        display: block;
+        width: 100%;
+    } */
+
+    .mobile__user-info {
+        display: flex;
+        align-items: center;
+        position: relative;
+        /* padding-left: 32px; */
+        margin-left: 32px;
+    }
+
+    .mobile__user-info::after {
+        content: "";
+        position: absolute;
+        display: block;
+        /* left: 20%;
+        right: 20%; */
+        width: 100%;
+        
+        border-bottom: 1px solid var(--primary-color);
+        top: calc(100% + 8px);
+    }
+
+    .user__icon {
+        font-size: 2rem;
+        color: var(--primary-color);
+        margin-right: 8px;
+    }
+
+    .mobile-menu__user-img {
+        height: 30px;
+        margin-right: 8px;
+    }
+
+    .user__name {
+        font-size: 1.8rem;
+        font-weight: 600;
+        color: #333;
+        flex-grow: 1;
+    }
+
+    .mobile-menu__list {
+        padding-left: 0;
+        margin-top: 16px;
+    }
+
+    .mobile-menu__item {
+        list-style: none;
+        padding-left: 32px;
+    }
+
+    .mobile-menu__item--active {
+        background-color: var(--primary-color);
+        border-bottom-right-radius: 52px;
+    }
+
+    .mobile-menu__item--active .mobile-menu__icon,
+    .mobile-menu__item--active .mobile-menu__link {
+        color: var(--white-color);
+    }
+
+    .mobile-menu__link {
+        display: block;
+        text-decoration: none;
+        color: #333;
+        padding: 16px 0;
+        font-size: 1.8rem;
+    }
+
+    .mobile-menu__icon {
+        margin-right: 8px;
+    }
+
+    .mobile-tablet__overlay {
+        position: fixed;
+        z-index: 2;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        display: none;
+        animation: menuSlideIn linear 0.3s;
+    }
+
+    .mobile-menu__close {
+        display: block;
+        float: right;
+        padding: 16px;
+    }
+
+    .mobile-menu__close-icon {
+        font-size: 3rem;
+        color: var(--white-color);
+    }
 
 
 /* modal auth */
@@ -417,6 +593,31 @@ img[alt="App Store"] {
     display: flex;
     align-items: center;
 }
+
+.mobile__menu-search {
+    display: flex;
+}
+
+.mobile__menu {
+    display: none;
+    padding: 0 12px;
+}
+
+.mobile__menu-icon {
+    color: var(--white-color);
+    font-size: 2.6rem;
+}
+
+.mobile__search {
+    display: none;
+    padding: 0 12px;
+}
+
+.mobile__search-icon {
+    color: var(--white-color);
+    font-size: 2.6rem;
+}
+
 
 .header-logo {
     width: 200px;
@@ -600,6 +801,7 @@ img[alt="App Store"] {
 .header-cart {
     width: 136px;
     text-align: center;
+    padding-right: 12px;
 }
 
 .header-cart-wrap {
@@ -703,7 +905,7 @@ img[alt="App Store"] {
 .products__list {
     padding-left: 0;
     display: none;
-    height: 50vh;
+    max-height: 50vh;
     overflow-y: auto;
 }
 
@@ -783,9 +985,7 @@ img[alt="App Store"] {
 
 /* container */
 #container {
-    /* height: 1200px; */
     background-color: #f5f5f5;
-    /* background-color: #333; */
     margin-top: var(--header-height);
 }
 
@@ -865,6 +1065,7 @@ img[alt="App Store"] {
     align-items: center;
     padding: 12px 20px;
     border-radius: 4px;
+    margin-bottom: 8px;
     /* position: fixed; */
 }
 
@@ -1015,7 +1216,7 @@ img[alt="App Store"] {
 }
 
 .home-product__item {
-    margin-top: 10px;
+    margin-bottom: 10px;
     box-shadow: 0 0 2px 0 #666;
     position: relative;
     transition: transform ease 0.1s;
