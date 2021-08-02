@@ -1473,6 +1473,7 @@ img[alt="App Store"] {
 
 /* footer */
 #footer {
+    padding: 0 8px 8px 8px;
     border-top: 6px solid var(--primary-color);
 }
 
@@ -1644,17 +1645,18 @@ img[alt="App Store"] {
 }
 
 .footer-download {
-    text-align: center;
+    /* text-align: center; */
     margin-top: 20px;
+    display: flex;
 }
 
 .footer-qr-code {
-    width: 70%;
+    width: 40%;
     border: 1px solid #ccc;
 }
 
 .footer-download__app {
-    width: 70%;
+    width: 60%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1662,13 +1664,34 @@ img[alt="App Store"] {
 
 .download-link {
     display: block;
-    text-align: center;
+    /* text-align: center; */
 }
 
 .download-link img[alt="Google Play"],
 .download-link img[alt="App Store"] {
     width: 70%;
+    transform: scale(0.9);
     /* border: 1px solid #ccc; */
     margin: 4px 0 0;
 }
+
+.footer__copyright {
+    display: flex;
+    justify-content: center;
+    border-top: 3px solid var(--primary-color);
+    padding-top: 8px;
+}
+
+.copyright-icon {
+    font-size: 2rem;
+    margin-right: 8px;
+    color: var(--primary-color);
+}
+
+.copyright__text {
+    margin: 0;
+    font-size: 1.8rem;
+    color: var(--primary-color);
+}
+
 
