@@ -23,6 +23,9 @@
     /* .container__content {
         margin-top: calc(var(--header-height) + var(--header-sort-height));
     } */
+    .container__content {
+        padding-top: 0;
+    }
 
     #container {
         margin-top: calc(var(--header-height) + var(--header-sort-height));
@@ -34,6 +37,10 @@
 
     #mobile-menu-checkbox:checked ~ .mobile__menu-bar,
     #mobile-menu-checkbox:checked ~ .mobile-tablet__overlay {
+        display: block;
+    }
+
+    .mobile-category {
         display: block;
     }
 }
